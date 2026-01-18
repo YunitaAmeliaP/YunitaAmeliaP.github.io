@@ -1,12 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Yunita Amelia Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Yunita Amelia Puspitasari</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 0;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background-color: rgba(0,0,0,0.2);
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    /* Hero section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .hero img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      object-fit: cover;
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      margin: 10px 0;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      max-width: 700px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      background-color: white;
+      color: #2575fc;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I'm Yunita Amelia Puspitasari 👋</h1>
-  <p>Data Science Enthusiast</p>
 
-  <a href="experience.html">See My Experience</a>
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <!-- Foto -->
+    <img src="assets/img/foto.jpg" alt="Yunita Amelia Puspitasari">
+
+    <!-- Nama -->
+    <h1>Yunita Amelia Puspitasari</h1>
+
+    <!-- Perkenalan panjang -->
+    <p>
+      Hello, I'm Yunita Amelia Puspitasari.<br>
+      I am a Bachelor of Data Science graduate with experience in processing, analyzing, and interpreting complex datasets to generate actionable insights for informed decision-making. Proficient in Python, R, and SQL for data analysis and predictive modeling, with hands-on experience building interactive dashboards using Power BI. Highly motivated, adaptable, and eager to contribute to data- and technology-driven organizations in roles such as Data Analyst, Business Analyst, or Data Scientist.
+    </p>
+
+    <!-- Tombol CTA -->
+    <a href="experience.html" class="btn">See My Experience</a>
+  </div>
+
 </body>
 </html>
